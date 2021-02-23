@@ -2,6 +2,14 @@ body,ul{
     margin: 0;
 }
 
+/* GRID */
+
+
+
+header{
+    background-color: gray;
+}
+
 .menu{
     height: 100vh;
     width: 80vw;
@@ -44,11 +52,14 @@ body,ul{
 
 /* MOBILE */
 @media screen and (min-width: 768px) and (max-width:1023px){
-    a.liquipedia{
-        display: block;
-        margin-left: 375px;
-        margin-right: auto;
-        width: 25%;
+    .logo{
+        display: none;
+    }
+    .link{
+        display: none;
+    }
+    footer{
+        display: none;
     }
 }
 
@@ -57,16 +68,35 @@ body,ul{
     .menu-button{
         display: none;
     }
-    a.liquipedia{
-        display: block;
-        margin-left: 550px;
-        margin-right: auto;
-        width: 25%;
+    .logo{
+        width: 50px;
+        position: relative;
+        top: 8px;
+    }
+    .link{
+        margin: 125px;
+        position: relative;
+        bottom: 25px;
     }
 }
 
-header{
-    background-color: gray;
+a.tournament{
+    display: block;
+    margin-left: 5px;
+    margin-right: auto;
+    text-align: center;
+}
+a.team{
+    display: block;
+    margin-left: 5px;
+    margin-right: auto;
+    text-align: center;
+}
+a.player{
+    display: block;
+    margin-left: 5px;
+    margin-right: auto;
+    text-align: center;
 }
 
 body{
