@@ -12,16 +12,32 @@ body,ul{
     'ma'
 }
 
+#liquipedia-container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 15% 115%;
+    grid-template-areas:
+    'hd'
+    'ma'
+}
+
+#socials-container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 15% 105%;
+    grid-template-areas:
+    'hd'
+    'ma'
+}
+
 header{
     grid-area: hd;
+    background-color: gray;
 }
 
 main{
     grid-area: ma;
-}
-
-header{
-    background-color: gray;
+    background-color: black;
 }
 
 .menu{
@@ -75,6 +91,30 @@ header{
     footer{
         display: none;
     }
+    #container{
+        display: grid;
+        height: 100vh;
+        grid-template-rows: 15% 100%;
+        grid-template-areas:
+        'hd'
+        'ma'
+    }
+    #liquipedia-container{
+        display: grid;
+        height: 100vh;
+        grid-template-rows: 15% 185%;
+        grid-template-areas:
+        'hd'
+        'ma'
+    }
+    #socials-container{
+        display: grid;
+        height: 100vh;
+        grid-template-rows: 15% 170%;
+        grid-template-areas:
+        'hd'
+        'ma'
+    }
 }
 
 /* DESKTOP */
@@ -97,7 +137,7 @@ header{
     }
 }
 
-/*a.tournament{
+a.tournament{
     display: block;
     margin-left: 5px;
     margin-right: auto;
@@ -114,10 +154,11 @@ a.player{
     margin-left: 5px;
     margin-right: auto;
     text-align: center;
-}*/
+}
 
 a{
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #Voffie_logo{
@@ -127,15 +168,27 @@ a{
     width: 250px;
 }
 
+.socials{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+
 p{
     font-family: Helvetica;
     text-align: center;
     color: white;
 }
 
-h1, h3{
+h1, h3, li{
     color: white;
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul{
+    list-style-position: inside;
 }
 
 a:link, a:visited{
