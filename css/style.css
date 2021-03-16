@@ -81,36 +81,33 @@ main{
 }
 
 /* MOBILE */
-@media screen and (min-width: 768px) and (max-width:1023px){
+@media screen and (min-width:320px) and (max-width:1023px){
     .logo{
         display: none;
     }
     .link{
         display: none;
     }
-    footer{
-        display: none;
-    }
     #container{
         display: grid;
-        height: 100vh;
-        grid-template-rows: 15% 100%;
+        height: 110vh;
+        grid-template-rows: 7.5% 105%;
         grid-template-areas:
         'hd'
         'ma'
     }
     #liquipedia-container{
         display: grid;
-        height: 100vh;
-        grid-template-rows: 15% 185%;
+        height: 125vh;
+        grid-template-rows: 7.5% 115%;
         grid-template-areas:
         'hd'
         'ma'
     }
     #socials-container{
         display: grid;
-        height: 100vh;
-        grid-template-rows: 15% 170%;
+        height: 125vh;
+        grid-template-rows: 7.5% 108%;
         grid-template-areas:
         'hd'
         'ma'
