@@ -30,6 +30,24 @@ body,ul{
     'ma'
 }
 
+#awards-container{
+    display: grid;
+    height: 125vh;
+    grid-template-rows: 12% 115%;
+    grid-template-areas:
+    'hd'
+    'ma'
+}
+
+#portfolio-container{
+    display: grid;
+    height: 125vh;
+    grid-template-rows: 12% 115%;
+    grid-template-areas:
+    'hd'
+    'ma'
+}
+
 header{
     grid-area: hd;
     background-color: gray;
@@ -99,7 +117,7 @@ main{
     #liquipedia-container{
         display: grid;
         height: 125vh;
-        grid-template-rows: 7.5% 115%;
+        grid-template-rows: 7.5% 100%;
         grid-template-areas:
         'hd'
         'ma'
@@ -111,6 +129,58 @@ main{
         grid-template-areas:
         'hd'
         'ma'
+    }
+    #awards-container{
+        display: grid;
+        height: 150vh;
+        grid-template-rows: 7.5% 115%;
+        grid-template-areas:
+        'hd'
+        'ma'
+    }
+    #portfolio-container{
+        display: grid;
+        height: 125vh;
+        grid-template-rows: 7.5% 109%;
+        grid-template-areas:
+        'hd'
+        'ma'
+    }
+    .portfolio{
+        display: block;
+        width: 325px;
+        height: 250px;
+        margin-left: 27px;
+        margin-right: auto;
+    }
+    #montage{
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: inline;
+        position: absolute;
+        top: 10px !important;
+        left: 10px !important;
+    }
+    #BORLC{
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: inline;
+        position: absolute;
+        top: 100px;
+        left: 10px;
+    }
+    .awards{
+        display: block;
+        width: 325px;
+        height: 250px;
+        margin-left: 27px;
+        margin-right: auto;
+    }
+    .port-txt{
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: inline;
+        margin-left: 27px;
     }
 }
 
@@ -194,4 +264,10 @@ a:link, a:visited{
 
 a:hover{
     text-decoration: underline;
+}
+
+iframe{
+    display: inline-block;
+    margin-left: 150px;
+    margin-right: auto;
 }
