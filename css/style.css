@@ -202,6 +202,13 @@ main{
         margin: 120px;
         bottom: 25px;
     }
+    .portfolio{
+        display: block;
+        width: 500px;
+        height: 250px;
+        margin-left: 410px;
+        margin-right: auto;
+    }
 }
 
 a.tournament{
