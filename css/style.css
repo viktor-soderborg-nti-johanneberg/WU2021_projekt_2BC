@@ -10,24 +10,32 @@ body,ul{
     grid-template-areas:
     'hd'
     'ma'
+    ;
 }
 
 #liquipedia-container{
     display: grid;
     height: 100vh;
-    grid-template-rows: 15% 115%;
+    width: 100vw;
+    grid-template-rows: 15% 28% 57%;
+    grid-template-columns: 50% 50%;
     grid-template-areas:
-    'hd'
-    'ma'
+    'hd hd'
+    'ma ma'
+    'se se2'
+    ;
 }
 
 #socials-container{
     display: grid;
     height: 100vh;
-    grid-template-rows: 15% 105%;
+    grid-template-rows: 15% 15% 60% 10%;
     grid-template-areas:
-    'hd'
-    'ma'
+    'hdf'
+    'se'
+    'sef'
+    'ft'
+    ;
 }
 
 #awards-container{
@@ -37,6 +45,7 @@ body,ul{
     grid-template-areas:
     'hd'
     'ma'
+    ;
 }
 
 #portfolio-container{
@@ -46,6 +55,7 @@ body,ul{
     grid-template-areas:
     'hd'
     'ma'
+    ;
 }
 
 header{
@@ -53,9 +63,37 @@ header{
     background-color: gray;
 }
 
+#flex{
+    grid-area: hdf;
+    background: gray;
+}
+
 main{
     grid-area: ma;
     background-color: black;
+}
+
+#organisations, #title{
+    grid-area: se;
+    background-color: black;
+}
+
+#people{
+    grid-area: se2;
+    background-color: black;
+}
+
+#secflex{
+    display: flex;
+    grid-area: sef;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer{
+    grid-area: ft;
+    background-color: gray;
 }
 
 .menu{
@@ -116,19 +154,26 @@ main{
     }
     #liquipedia-container{
         display: grid;
-        height: 125vh;
-        grid-template-rows: 7.5% 100%;
+        height: 100vh;
+        width: 100vw;
+        grid-template-rows: 7.5% 35% 65%;
+        grid-template-columns: 65% 50%;
         grid-template-areas:
-        'hd'
-        'ma'
+        'hd hd'
+        'ma ma'
+        'se se2'
+        ;
     }
     #socials-container{
         display: grid;
-        height: 125vh;
-        grid-template-rows: 7.5% 108%;
+        height: 100vh;
+        grid-template-rows: 7.5% 25% 57.5% 10%;
         grid-template-areas:
-        'hd'
-        'ma'
+        'hdf'
+        'se'
+        'sef'
+        'ft'
+        ;
     }
     #awards-container{
         display: grid;
