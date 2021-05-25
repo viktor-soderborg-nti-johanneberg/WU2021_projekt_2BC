@@ -51,7 +51,7 @@ body,ul{
 #portfolio-container{
     display: grid;
     height: 125vh;
-    grid-template-rows: 12% 115%;
+    grid-template-rows: 12% 100%;
     grid-template-areas:
     'hd'
     'ma'
@@ -154,20 +154,20 @@ footer{
     }
     #liquipedia-container{
         display: grid;
-        height: 100vh;
-        width: 100vw;
-        grid-template-rows: 7.5% 35% 65%;
-        grid-template-columns: 65% 50%;
+        height: 150vh;
+        grid-template-rows: 7.5% 25% 42% 40%;
+        grid-template-columns: 100%;
         grid-template-areas:
-        'hd hd'
-        'ma ma'
-        'se se2'
+        'hd'
+        'ma'
+        'se'
+        'se2'
         ;
     }
     #socials-container{
         display: grid;
-        height: 100vh;
-        grid-template-rows: 7.5% 25% 57.5% 10%;
+        height: 150vh;
+        grid-template-rows: 7.5% 12% 71% 9.5%;
         grid-template-areas:
         'hdf'
         'se'
@@ -178,7 +178,7 @@ footer{
     #awards-container{
         display: grid;
         height: 150vh;
-        grid-template-rows: 7.5% 115%;
+        grid-template-rows: 7.5% 100%;
         grid-template-areas:
         'hd'
         'ma'
@@ -186,7 +186,7 @@ footer{
     #portfolio-container{
         display: grid;
         height: 125vh;
-        grid-template-rows: 7.5% 109%;
+        grid-template-rows: 7.5% 139%;
         grid-template-areas:
         'hd'
         'ma'
@@ -195,7 +195,7 @@ footer{
         display: block;
         width: 325px;
         height: 250px;
-        margin-left: 27px;
+        margin-left: 22%;
         margin-right: auto;
     }
     #montage{
@@ -218,14 +218,18 @@ footer{
         display: block;
         width: 325px;
         height: 250px;
-        margin-left: 27px;
+        margin-left: 20%;
         margin-right: auto;
     }
     .port-txt{
         color: white;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         display: inline;
-        margin-left: 27px;
+        margin-left: 22%;
+        margin-right: auto;
+    }
+    #secflex{
+        display: block;
     }
 }
 
@@ -316,10 +320,4 @@ a:link, a:visited{
 
 a:hover{
     text-decoration: underline;
-}
-
-iframe{
-    display: inline-block;
-    margin-left: 150px;
-    margin-right: auto;
 }
